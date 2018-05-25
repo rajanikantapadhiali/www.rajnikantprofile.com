@@ -1,0 +1,146 @@
+body, *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("men.jpg");
+	height: 1000px;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.first{
+	text-align: center;
+	background-color: white;
+	color: black;
+	height: 50px;
+	opacity: 0.7;
+	padding-top: 10px;
+	font-size: 1.8vw;
+	font-family: serif;  
+}
+
+.navigation{
+	height: 50px;
+	background: linear-gradient(to bottom right, slateblue, gray);
+	opacity: 0.8;
+	position: sticky;
+	top: 0;
+}
+
+.navigation ul,li{
+	float: left;
+	list-style-type: none;
+	font-family: serif;
+}
+
+.navigation a{
+	text-decoration: none;
+}
+.name{
+	height: 200px;
+	width: 600px;
+	border-radius: 20px;
+	text-align: center;
+	background-color: gray;
+	opacity: 0.5;
+	font-size: 70px;
+	color: white;
+	letter-spacing: 5px;
+	font-family: monospace;
+	text-shadow: 5px 5px black;
+	position: absolute;
+	top:400px;
+	left: 150px;
+}
+
+
+.textcontainer{
+	height: 675px;
+	width: 60%;
+	background: linear-gradient(to right, #c04848, #480048);
+	position: absolute;
+	top:800px;
+	margin: auto;
+	position: relative;
+}
+
+
+.sym
+{
+	height: 130px;
+	width : 100px;
+	background: linear-gradient(to right, #5c258d, #4389a2);
+	position: absolute;
+	top:60px;
+	left: 340px;
+	border-radius: 45%;
+	box-shadow: 10px 15px 20px  rebeccapurple, 5px 10px 15px  black;
+}
+
+.sym > a{
+	color: black; 
+	text-shadow: 6px 3px red;
+	font-size: 60px; 
+	padding-top: 30px;
+	margin: auto;
+}
+
+
+.about{
+	color: seashell;
+	font-family: sans-serif;
+	font-size: medium;
+	letter-spacing: 2px;
+	padding: 250px 150px;
+	line-height: 2;
+	text-align: center;
+}
+
+#btn{
+	background: linear-gradient(to right, #c04848, #480048);
+	padding: 15px 50px;
+	position: absolute;
+	top: 520px;
+	left: 275px;
+	color: seashell;
+	border-color: #5c258d;
+	box-shadow:5px 3px 2px #4389a2;
+}
+
+a{
+	padding: 15px 25px;
+	color: white;
+	text-decoration: none;
+	float: left;
+}
+
+a:hover{
+	color: black;
+}
+
+
+#btn:hover{
+	background-color: springgreen;
+}
+
+
+/*==============================================================================*/
+
+
+.second{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("code.jpeg");
+	height: 1200px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.third{
+	height: 1000px;
+	background-color: gray;
+}

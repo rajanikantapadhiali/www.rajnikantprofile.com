@@ -4,7 +4,7 @@ body, *{
 	box-sizing: border-box;
 }
 header{
-	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("men.jpg");
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../image/men.jpg");
 	height: 1000px;
 	background-position: center;
 	background-size: cover;
@@ -23,7 +23,7 @@ header{
 	font-family: serif;  
 }
 
-.navigation{
+nav {
 	height: 50px;
 	background: linear-gradient(to bottom right, slateblue, gray);
 	opacity: 0.8;
@@ -31,14 +31,34 @@ header{
 	top: 0;
 }
 
-.navigation ul,li{
+nav li{
+	padding: 15px 25px;
 	float: left;
 	list-style-type: none;
+}
+
+nav a{
+	color: white;
+	text-decoration: none;
 	font-family: serif;
 }
 
-.navigation a{
+.nav2 {
+	background: linear-gradient(to bottom right, slateblue, gray);
+	opacity: 0.8;
+	display: none;
+}
+
+.nav2 li{
+	padding: 15px 25px;
+	list-style-type: none;
+	text-align: center;
+}
+
+.nav2 a{
+	color: white;
 	text-decoration: none;
+	font-family: serif;
 }
 .name{
 	height: 200px;
@@ -85,8 +105,7 @@ header{
 	color: black; 
 	text-shadow: 6px 3px red;
 	font-size: 60px; 
-	padding-top: 30px;
-	margin: auto;
+	text-decoration: none;
 }
 
 
@@ -111,13 +130,6 @@ header{
 	box-shadow:5px 3px 2px #4389a2;
 }
 
-a{
-	padding: 15px 25px;
-	color: white;
-	text-decoration: none;
-	float: left;
-}
-
 a:hover{
 	color: black;
 }
@@ -132,7 +144,7 @@ a:hover{
 
 
 .second{
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("code.jpeg");
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("../image/code.jpeg");
 	height: 1200px;
 	background-attachment: fixed;
 	background-position: center;
@@ -144,3 +156,20 @@ a:hover{
 	height: 1000px;
 	background-color: gray;
 }
+
+#bar {
+	display: none;
+}
+
+	@media only screen and (max-width: 600px) {
+
+		nav li {
+			display: none;
+		}
+		#bar {
+			display: block;
+		}
+		#symr {
+			float: left;
+		}
+	}

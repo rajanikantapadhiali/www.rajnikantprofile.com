@@ -4,22 +4,36 @@
 	<title>My Port Folio</title>
 	<meta charset="utf-8">
 	<meta content="viewport" width="device-width , initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<script src="jquery.js"></script>
-	<script src="angularjs.min.js"></script>
-	<script src="script.js"></script>
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="../javascript/jquery.js"></script>
+	<script src="../javascript/angularjs.min.js"></script>
+	<script src="../javascript/script.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 </head>
 <body onload="load()">
 <header>
 	<div class="first">i'm nothing...but a web developer...</div>
-	<div class="navigation">
-			<a href="#">HOME</a>
-			<a href="#animate">PROFESSIONAL</a>
-			<a href="#">EXPERIENCE</a>
-			<a href="#port">PORTFOLIO</a>
-			<a href="#">CONTACT</a>
-			<a href="#" style="float: right;color: black; text-shadow: 3px 3px red;font-size: 30px; padding-top: 10px">R</a>
+	<nav>
+		<ul>
+			<li><a href="#" id="hom">HOME</a></li>
+			<li><a href="#animate">PROFESSIONAL</a></li>
+			<li><a href="#">EXPERIENCE</a></li>
+			<li><a href="#port">PORTFOLIO</a></li>
+			<li><a href="#">CONTACT</a></li>
+			<i id="bar" onclick="myFun()" class="fa fa-align-justify" style="font-size:30px;float: right;color:red;padding: 10px 20px;cursor:pointer"></i>
+			<a id="symr" href="#" style="float: left;color: black; text-shadow: 3px 3px red;font-size: 30px; padding-top: 10px">R</a>
+		</ul>
+	</nav>
+
+	<div class="nav2">
+			<ul>
+					<li><a href="#" id="hom">HOME</a></li>
+					<li><a href="#animate">PROFESSIONAL</a></li>
+					<li><a href="#">EXPERIENCE</a></li>
+					<li><a href="#port">PORTFOLIO</a></li>
+					<li><a href="#">CONTACT</a></li>
+			</ul>
 	</div>
 
 	<div class="name">
@@ -45,31 +59,31 @@
 
 	<div><p style="padding-top: 50px;padding-left: 400px;color: white;font-family: sans-serif;display: inline-block;">HTML</p>
 	&nbsp;&nbsp;&nbsp;<div id="bar1" style="height: 15px;width: 0px;background-color: rgb(8, 182, 8);display: inline-block;"></div>
-	&nbsp;&nbsp;&nbsp;<span id="percent1" style="display: none; width: 100px;color: rgb(86, 57, 168)">80%</span></div><br><br>
+	&nbsp;&nbsp;&nbsp;<span id="percent1" style="display: none; width: 100px;color: white">80%</span></div><br><br>
 	
 	<div><p style="padding-left: 410px;color: white;font-family: sans-serif;display: inline-block;">CSS</p>
 	&nbsp;&nbsp;&nbsp;<div id="bar2" style="height: 15px;width: 0px;background-color: rgb(8, 182, 8);display: inline-block;"></div>
-	&nbsp;&nbsp;&nbsp;<span id="percent2" style="display: none; width: 100px;color: rgb(86, 57, 168)">70%</span></div><br><br>
+	&nbsp;&nbsp;&nbsp;<span id="percent2" style="display: none; width: 100px;color: white">70%</span></div><br><br>
 	
 	<div><p style="padding-left: 350px;color: white;font-family: sans-serif;display: inline-block;">JAVASCRIPT</p>
 	&nbsp;&nbsp;&nbsp;<div id="bar3" style="height: 15px;width: 0px;background-color: rgb(8, 182, 8);display: inline-block;"></div>
-	&nbsp;&nbsp;&nbsp;<span id="percent3" style="display: none; width: 100px;color: rgb(86, 57, 168)">60%</span></div><br><br>
+	&nbsp;&nbsp;&nbsp;<span id="percent3" style="display: none; width: 100px;color: white">60%</span></div><br><br>
 	
 	<div><p style="padding-left: 380px;color: white;font-family: sans-serif;display: inline-block;">JQUERY</p>
 	&nbsp;&nbsp;&nbsp;<div id="bar4" style="height: 15px;width: 0px;background-color: rgb(8, 182, 8);display: inline-block;"></div>
-	&nbsp;&nbsp;&nbsp;<span id="percent4" style="display: none; width: 100px;color: rgb(86, 57, 168)">90%</span></div><br><br>
+	&nbsp;&nbsp;&nbsp;<span id="percent4" style="display: none; width: 100px;color: white">90%</span></div><br><br>
 	
 	<div><p style="padding-left: 370px;color: white;font-family: sans-serif;display: inline-block;">ANGULAR</p>
 	&nbsp;&nbsp;&nbsp;<div id="bar5" style="height: 15px;width: 0px;background-color: rgb(8, 182, 8);display: inline-block;"></div>
-	&nbsp;&nbsp;&nbsp;<span id="percent5" style="display: none; width: 100px;color: rgb(86, 57, 168)">70%</span></div><br><br>
+	&nbsp;&nbsp;&nbsp;<span id="percent5" style="display: none; width: 100px;color: white">70%</span></div><br><br>
 		
 	<div><p style="padding-left: 350px;color: white;font-family: sans-serif;display: inline-block;">BOOTSTRAP</p>
 	&nbsp;&nbsp;&nbsp;<div id="bar6" style="height: 15px;width: 0px;background-color: rgb(8, 182, 8);display: inline-block;"></div>
-	&nbsp;&nbsp;&nbsp;<span id="percent6" style="display: none; width: 100px;color: rgb(86, 57, 168)">60%</span></div><br><br>
+	&nbsp;&nbsp;&nbsp;<span id="percent6" style="display: none; width: 100px;color: white">60%</span></div><br><br>
 
 	<div><p style="padding-left: 350px;color: white;font-family: sans-serif;display: inline-block;">AJAX & JSON</p>
 	&nbsp;&nbsp;&nbsp;<div id="bar7" style="height: 15px;width: 0px;background-color: rgb(8, 182, 8);display: inline-block;"></div>
-	&nbsp;&nbsp;&nbsp;<span id="percent7" style="display: none; width: 100px;color: rgb(86, 57, 168)">80%</span></div>
+	&nbsp;&nbsp;&nbsp;<span id="percent7" style="display: none; width: 100px;color: white">80%</span></div>
 	
 	</div>
 </div>
@@ -78,13 +92,13 @@
 <div class="third">
 	<h2 style="text-align: center;color:white;font-size: 4vw;margin-bottom: 100px">My Projects</h2>
 				<div style="margin-left: 200px;height: 300px;width:300px;display:inline;float:left">
-					<a href="https://rajanikantapadhiali.github.io/rajanikanta.rest.com/" target="_blank"><img src="code.jpeg" height="300px" width="300px" style="padding: 0px;opacity: 0.5;position: relative;"><h3 style="position: absolute;">restaurant</h3></a>
+					<a href="file:///C:/Users/rajkumar/Desktop/Web%20Pages/Restaurant/html/restaurant.html" target="_blank"><img src="../image/code.jpeg" height="300px" width="300px" style="padding: 0px;opacity: 0.5;position: relative;"><h3 style="position: absolute;">restaurant</h3></a>
 				</div>
 				<div style="height: 300px;;width:300px;display:inline;float:left">
-						<a href="https://rajanikantapadhiali.github.io/rajanikanta.rest.com/" target="_blank"><img src="raj2.JPG" height="300px" width="300px" style="padding: 0px;opacity: 0.5;position: relative;"><h3 style="position: absolute;">angularjs</h3></a>
+						<a href="file:///C:/Users/rajkumar/Desktop/Web%20Pages/angularjsProject/html/index.html" target="_blank"><img src="../image/raj2.JPG" height="300px" width="300px" style="padding: 0px;opacity: 0.5;position: relative;"><h3 style="position: absolute;">angularjs</h3></a>
 					</div>
 				<div style="height: 300px;width:300px;display:inline;float:left">
-						<a href="https://rajanikantapadhiali.github.io/rajanikanta.rest.com/" target="_blank"><img src="men.jpg" height="300px" width="300px" style="padding: 0px;opacity: 0.5;position: relative;"><h3 style="position: absolute;">Menu</h3></a>
+						<a href="file:///C:/Users/rajkumar/Desktop/Web%20Pages/Restaurant/html/menu.html" target="_blank"><img src="../image/men.jpg" height="300px" width="300px" style="padding: 0px;opacity: 0.5;position: relative;"><h3 style="position: absolute;">Menu</h3></a>
 				</div>
 </div>
 

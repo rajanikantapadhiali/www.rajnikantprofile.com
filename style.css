@@ -43,6 +43,14 @@ nav a{
 	font-family: serif;
 }
 
+#symr {
+	float: right; 
+	color: black; 
+	text-shadow: 3px 3px red;
+	font-size: 30px; 
+	margin-top: 10px;
+	margin-right: 20px;
+}
 .nav2 {
 	background: linear-gradient(to bottom right, slateblue, gray);
 	opacity: 0.8;
@@ -154,7 +162,11 @@ a:hover{
 
 .third{
 	height: 1000px;
-	background-color: gray;
+	background-color: rgb(49, 57, 78);
+}
+
+.third img:hover{
+	opacity: 0.5;
 }
 
 #bar {
@@ -171,5 +183,6 @@ a:hover{
 		}
 		#symr {
 			float: left;
+			margin-left: 20px;
 		}
 	}

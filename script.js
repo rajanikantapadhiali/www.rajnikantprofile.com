@@ -21,13 +21,11 @@
     });
  }
 
- function myFun(){
+function myFun(){
     $(document).ready(function(){
-    $("#bar").click(function(){
-        $(".nav2").slideToggle(2000);
-    }
+        $("#bar").click(function(){
+            $(".nav2").slideToggle(2000);
+        });
     });
-});
-
 }
 
